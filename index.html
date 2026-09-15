@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Цаплюк О.Г. - ІП-41 - ЛР-2 - Варіант 2</title>
+    <style>
+        /* Загальні стилі сторінки та таблиці */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 30px;
+        }
+
+        .variant-table {
+            border-collapse: collapse;
+            width: 650px;
+            margin: 0 auto;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .variant-table td {
+            border: 1px solid #444;
+            padding: 12px;
+            vertical-align: middle;
+        }
+
+        /* 1-й рядок: колір фону #028f8f та білий контрастний текст */
+        .row-first {
+            background-color: #028f8f;
+            color: #ffffff;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* 2-й рядок: колір фону #f5f502 та темний контрастний текст */
+        .row-second {
+            background-color: #f5f502;
+            color: #000000;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Ефект наведення (hover) — зміна кольорів на протилежні для 1-го та 2-го рядків */
+        .row-first:hover {
+            background-color: #f5f502;
+            color: #000000;
+        }
+
+        .row-second:hover {
+            background-color: #028f8f;
+            color: #ffffff;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <table class="variant-table">
+        <!-- 1-й рядок: ПІБ виконавця (окремо в кожну комірку) та інші комірки верхнього блоку -->
+        <tr class="row-first">
+            <td rowspan="3">ПІБ</td>
+            <td>Цаплюк</td>
+            <td rowspan="3">Студентка</td>
+            <td>ФІОТ</td>
+        </tr>
+        <tr class="row-first">
+            <td>Оксана</td>
+            <td>НТУУ "КПІ"</td>
+        </tr>
+        <tr class="row-first">
+            <td>Геннадіївна</td>
+            <td>2026 рік</td>
+        </tr>
+
+        <!-- 2-й рядок: послідовно група, номер лабораторної роботи та номер варіанту -->
+        <tr class="row-second">
+            <td>ІП-41</td>
+            <td colspan="2">Лабораторна робота №2</td>
+            <td>Варіант 2</td>
+        </tr>
+    </table>
+
+    <!-- ЗАВДАННЯ 2: Прапор Швейцарії (Варіант 2) засобами CSS -->
+    <div class="css-image-container">
+        <div class="swiss-flag">
+            <div class="cross-vertical"></div>
+            <div class="cross-horizontal"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* Стилі для Завдання 2: Прапор Швейцарії засобами CSS */
+.css-image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Червоний квадрат-основа прапора */
+.swiss-flag {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #da291c; /* класичний червоний колір швейцарського прапора */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+
+/* Вертикальна перекладина білого хреста */
+.cross-vertical {
+    position: absolute;
+    top: 20%;
+    left: 42.5%;
+    width: 15%;
+    height: 60%;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+/* Горизонтальна перекладина білого хреста */
+.cross-horizontal {
+    position: absolute;
+    top: 42.5%;
+    left: 20%;
+    width: 60%;
+    height: 15%;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
